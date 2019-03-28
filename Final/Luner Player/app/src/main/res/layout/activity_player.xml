@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/player_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/black">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingTop="10dp"
+            android:text="Luner Player"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/image"
+        android:layout_width="290dp"
+        android:layout_height="370dp"
+        android:layout_below="@+id/player_name"
+        android:background="#313131"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="284dp"
+            android:src="@drawable/adele" />
+
+        <TextView
+            android:id="@+id/txt_songsong"
+            android:layout_width="158dp"
+            android:layout_height="70dp"
+            android:background="@android:color/holo_green_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnv_layout"
+        android:layout_width="99dp"
+        android:layout_height="375dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/player_name"
+        android:background="#2A2A2A"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/Playlist_Button"
+            android:layout_width="89dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:padding="6dp"
+            android:src="@drawable/btn_playlist"
+            android:onClick="OpenPlayListActivity"/>
+
+        <ImageButton
+            android:id="@+id/eq_Button"
+            android:layout_width="87dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:padding="6dp"
+            android:src="@drawable/btn_eq" />
+
+        <TextView
+            android:id="@+id/txt_currentsongindex"
+            android:layout_width="86dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/seekbar_layout"
+        android:orientation="horizontal"
+        android:background="@drawable/seekbar_layout_bg"
+        android:layout_below="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="28dp">
+
+        <TextView
+            android:id="@+id/songCurrentDurationLabel"
+            android:textColor="#DCDCDC"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="28dp" />
+
+        <SeekBar
+            android:id="@+id/seekbar_progress"
+            android:layout_width="267dp"
+            android:layout_height="35dp"
+            android:layout_weight="4"
+            android:thumb="@drawable/seeker_thumb" />
+        <TextView
+            android:id="@+id/songTotalDurationLabel"
+            android:textColor="#DCDCDC"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="28dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/playbtn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#0E0E0E"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:id="@+id/songid"
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:autoText="false"
+            android:gravity="fill_vertical"
+            android:lines="1"
+            android:paddingLeft="8dp"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:paddingLeft="2dp"
+            android:src="@drawable/btn_back" />
+
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:src="@drawable/btn_play" />
+
+        <ImageButton
+
+            android:id="@+id/next_button"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/btn_next" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

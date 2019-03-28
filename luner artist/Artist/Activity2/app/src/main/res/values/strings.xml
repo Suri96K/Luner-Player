@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My App</string>
+    <string name="clicked_item">Clicked item : %1$s</string>
+    <string name="rename_album">RENAME ALBUM</string>
+    <string name="delete_item">DELETE ITEM</string>
+    <string name="cant_be_empty">Can\'t be empty</string>
+</resources>

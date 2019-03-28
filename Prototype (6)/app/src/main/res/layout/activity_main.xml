@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="367dp"
+        android:layout_height="541dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/buttonprof"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@android:style/Widget.DeviceDefault.TextView.ListSeparator"
+                android:layout_width="124dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:text="Profile"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="266dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="282dp"
+                android:layout_height="134dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark"
+                app:srcCompat="@mipmap/first" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Amarasiri Peiris"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="36sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Likes14589"
+                    android:layout_width="94dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#8acd05"
+                    android:text="LIKES 14589"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColorLink="@color/colorAccent"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/Following"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#7cb706"
+                    android:text="Following 387"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_light_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:layout_marginTop="20dp"
+                android:text="  He is the son of late Albert Peiris who was a Radio Ceylon artiste of the 1940s. He studied at Buwanekaba Vidyalaya,Maharagama and the University of Visual & Performing Arts.He joined SLBC as an A-grade violinist, and eventually, became a music conductor, a music controller and, at the time of his retirement, he worked as the Director, Music at SLBC.
+                 Peiris is an awarded Singer in Sri Lankaand he still performs on stage."
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="serif"
+                android:text="facebook - aPeiris.com"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

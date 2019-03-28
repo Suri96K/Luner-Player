@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="profile_pic">Artist_pic</string>
+    <string name="NoofAlbum">Album</string>
+    <string name="noOfSongs">Songs</string>
+    <string name="discription">about Artist</string>
+</resources>
